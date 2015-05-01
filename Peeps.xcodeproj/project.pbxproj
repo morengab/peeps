@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A618C991AF30AB500B0802D /* PeepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A618C981AF30AB400B0802D /* PeepViewController.swift */; };
 		7AFDAEA71AEDD943007C0C92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFDAEA61AEDD943007C0C92 /* AppDelegate.swift */; };
 		7AFDAEA91AEDD943007C0C92 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFDAEA81AEDD943007C0C92 /* MainViewController.swift */; };
 		7AFDAEAC1AEDD943007C0C92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AFDAEAA1AEDD943007C0C92 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A618C981AF30AB400B0802D /* PeepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeepViewController.swift; sourceTree = "<group>"; };
 		7AFDAEA11AEDD943007C0C92 /* Peeps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peeps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFDAEA51AEDD943007C0C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AFDAEA61AEDD943007C0C92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				7AFDAEA61AEDD943007C0C92 /* AppDelegate.swift */,
 				7AFDAEA81AEDD943007C0C92 /* MainViewController.swift */,
+				7A618C981AF30AB400B0802D /* PeepViewController.swift */,
 				7AFDAEAA1AEDD943007C0C92 /* Main.storyboard */,
 				7AFDAEAD1AEDD943007C0C92 /* Images.xcassets */,
 				7AFDAEAF1AEDD943007C0C92 /* LaunchScreen.xib */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AFDAEA91AEDD943007C0C92 /* MainViewController.swift in Sources */,
+				7A618C991AF30AB500B0802D /* PeepViewController.swift in Sources */,
 				7AFDAEA71AEDD943007C0C92 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
