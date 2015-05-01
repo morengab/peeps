@@ -9,7 +9,9 @@
 import UIKit
 
 class MainViewController: UITableViewController, UITableViewDataSource {
-
+    
+    let names = ["Andrew", "Gaby", "Julie", "Connie", "Thunderbird", "Devin", "Mark"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -26,7 +28,7 @@ class MainViewController: UITableViewController, UITableViewDataSource {
             if (tableViewCell == nil) {
                 tableViewCell = UITableViewCell(style: .Default, reuseIdentifier: "PeepCell")
             }
-            tableViewCell!.textLabel?.text = "Andrew Clissold??!"
+            tableViewCell!.textLabel?.text = names[indexPath.row]
             return tableViewCell!
     }
     
