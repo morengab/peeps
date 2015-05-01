@@ -25,15 +25,22 @@ class MainViewController: UITableViewController, UITableViewDataSource {
     override func tableView(tableView: UITableView,
         cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
             var tableViewCell = tableView.dequeueReusableCellWithIdentifier("PeepCell") as? UITableViewCell
-            if (tableViewCell == nil) {
+            if tableViewCell == nil {
                 tableViewCell = UITableViewCell(style: .Default, reuseIdentifier: "PeepCell")
             }
-            tableViewCell!.textLabel?.text = names[indexPath.row]
+            tableViewCell!.textLabel!.text = names[indexPath.row]
             return tableViewCell!
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 7
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showPeepDetails" {
+            let peepViewController = segue.destinationViewController as! PeepViewController
+            peepViewController.peepName = (sender as! UITableViewCell).textLabel!.text!
+        }
     }
 
 

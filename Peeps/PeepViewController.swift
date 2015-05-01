@@ -12,8 +12,10 @@ class PeepViewController : UIViewController {
 
     @IBOutlet weak var nameLabel: UILabel!
     
+    var peepName: String!
+    
     override func viewDidLoad() {
-        nameLabel.text = "..."
+        nameLabel.text = peepName
     }
 
 }
