@@ -22,9 +22,12 @@ class MainViewController: UITableViewController, UITableViewDataSource {
     
     override func tableView(tableView: UITableView,
         cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-            var tableViewCell = tableView.dequeueReusableCellWithIdentifier("PeepCell") as! UITableViewCell
-            tableViewCell.textLabel?.text = "Andrew Clissold??!"
-            return tableViewCell
+            var tableViewCell = tableView.dequeueReusableCellWithIdentifier("PeepCell") as? UITableViewCell
+            if (tableViewCell == nil) {
+                tableViewCell = UITableViewCell(style: .Default, reuseIdentifier: "PeepCell")
+            }
+            tableViewCell!.textLabel?.text = "Andrew Clissold??!"
+            return tableViewCell!
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
