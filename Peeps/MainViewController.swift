@@ -23,12 +23,12 @@ class MainViewController: UITableViewController, UITableViewDataSource {
     override func tableView(tableView: UITableView,
         cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
             var tableViewCell = tableView.dequeueReusableCellWithIdentifier("PeepCell") as! UITableViewCell
-            tableViewCell.textLabel?.text = "What up??!"
+            tableViewCell.textLabel?.text = "Andrew Clissold??!"
             return tableViewCell
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 7
     }
 
 
